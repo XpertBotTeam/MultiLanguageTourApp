@@ -4,10 +4,10 @@ buildscript {
         google()
         mavenCentral()
     }
-
     dependencies {
         classpath 'com.android.tools.build:gradle:7.2.0'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        // Move the id line outside of the dependencies block
     }
 }
 
@@ -21,9 +21,7 @@ allprojects {
 rootProject.buildDir = '../build'
 subprojects {
     project.buildDir = "${rootProject.buildDir}/${project.name}"
-}
-subprojects {
-    project.evaluationDependsOn(':app')
+    project.evaluationDependsOn(':app') // You might not need this line twice
 }
 
 tasks.register("clean", Delete) {
