@@ -1,4 +1,4 @@
-# tourapp
+# tourapp_pages
 
 A new Flutter project.
 

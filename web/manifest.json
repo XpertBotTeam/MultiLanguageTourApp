@@ -1,6 +1,6 @@
 {
-    "name": "tourapp",
-    "short_name": "tourapp",
+    "name": "tourapp_pages",
+    "short_name": "tourapp_pages",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

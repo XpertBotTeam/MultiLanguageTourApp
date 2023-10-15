@@ -1,7 +1,6 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.tourapp">
-   <application
-        android:label="tourapp"
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <application
+        android:label="tourapp_pages"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
