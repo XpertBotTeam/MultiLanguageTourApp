@@ -1,4 +1,4 @@
-name: tourapp_pages
+name: where_to
 description: A new Flutter project.
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
@@ -30,9 +30,12 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  webview_flutter: ^2.0.12
-  url_launcher: ^6.0.13
-
+  webview_flutter: ^4.4.1
+  url_launcher: ^6.1.14
+  firebase_core: ^2.19.0
+  firebase_auth: ^4.11.1
+  cloud_firestore: ^4.11.0
+  firebase_storage: ^11.3.1
 
 
 
@@ -44,12 +47,13 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
 
+
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
   # activated in the `analysis_options.yaml` file located at the root of your
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
-  flutter_lints: ^2.0.0
+  flutter_lints: ^3.0.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -64,27 +68,27 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-  #   - images/a_dot_burr.jpeg
-  #   - images/a_dot_ham.jpeg
-      - assets/image1.jpg
-      - assets/map1.png
-      - assets/NightClubs/ahm1.png
-      - assets/NightClubs/Ahm2.jpg
-      - assets/NightClubs/raw1.jpg
-      - assets/NightClubs/raw2.jpg
-      - assets/NightClubs/Spine1.jpg
-      - assets/NightClubs/spine2.jpg
-      - assets/Historic/baalbek1.jpg
-      - assets/Historic/baalbek2.jpg
-      - assets/Historic/Jeita1.jpg
-      - assets/Historic/Jeita2.jpg
-      - assets/Historic/Sidon1.jpg
-      - assets/Historic/Sidon2.jpg
-      - assets/Bars.jpg
-      - assets/Beaches.jpg
-      - assets/Historic.jpg
-      - assets/NightClubs.jpg
-      - assets/Restaurants.jpeg
+    #   - images/a_dot_burr.jpeg
+    #   - images/a_dot_ham.jpeg
+    - assets/image1.jpg
+    - assets/map1.png
+    - assets/NightClubs/ahm1.png
+    - assets/NightClubs/Ahm2.jpg
+    - assets/NightClubs/raw1.jpg
+    - assets/NightClubs/raw2.jpg
+    - assets/NightClubs/Spine1.jpg
+    - assets/NightClubs/spine2.jpg
+    - assets/Historic/baalbek1.jpg
+    - assets/Historic/baalbek2.jpg
+    - assets/Historic/Jeita1.jpg
+    - assets/Historic/Jeita2.jpg
+    - assets/Historic/Sidon1.jpg
+    - assets/Historic/Sidon2.jpg
+    - assets/Bars.jpg
+    - assets/Beaches.jpg
+    - assets/Historic.jpg
+    - assets/NightClubs.jpg
+    - assets/Restaurants.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'categories.dart';
-import 'my_profile.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
@@ -15,6 +14,7 @@ class HomeScreen extends StatelessWidget {
             fontStyle: FontStyle.italic,
           ),
         ),
+
         centerTitle: true,
         backgroundColor: Colors.deepPurple,
       ),

@@ -1,6 +1,6 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'categories.dart';
-import 'home.dart';
+import 'package:where_to/features/user_auth/presentation/pages/login_page.dart';
 
 class MyProfileScreen extends StatelessWidget {
   @override
@@ -71,15 +71,13 @@ class ProfileScreen extends StatelessWidget {
         ),
         child: Column(
           children: [
-            const SizedBox(height: 5),
+            const SizedBox(height: 25),
             CircleAvatar(
               radius: 95,
               backgroundImage: AssetImage('assets/image1.jpg'),
             ),
             const SizedBox(height: 20),
             itemProfile('Name', 'Anthony Khoury', Icons.person),
-            const SizedBox(height: 10),
-            itemProfile('Phone', '76123123', Icons.phone),
             const SizedBox(height: 10),
             itemProfile('Address', 'Beirut , Lebanon', Icons.map),
             const SizedBox(height: 10),
@@ -88,13 +86,34 @@ class ProfileScreen extends StatelessWidget {
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+
+                },
                 style: ElevatedButton.styleFrom(
                   padding: const EdgeInsets.all(15),
                   backgroundColor: Colors.yellow[700]
                 ),
                 child: const Text('Edit Profile'),
               ),
+
+            ),
+            const SizedBox(height: 20),
+            SizedBox(
+              width: double.infinity,
+              child: ElevatedButton(
+                onPressed: () {
+                  FirebaseAuth.instance.signOut();
+                  Navigator.pushAndRemoveUntil(context, MaterialPageRoute(builder: (context) => LoginPage()), (route) => false);
+
+                },
+                style: ElevatedButton.styleFrom(
+                    padding: const EdgeInsets.all(15),
+                    backgroundColor: Colors.red
+                ),
+                child: const Text('Log Out', style: TextStyle(color: Colors.white)),
+
+              ),
+
             )
           ],
         ),
@@ -129,11 +148,6 @@ class ProfileScreen extends StatelessWidget {
           iconData,
           color: Colors.yellow,
         ),
-        trailing: Icon(
-          Icons.arrow_forward,
-          color: Colors.yellow.shade400,
-        ),
-
       ),
     );
   }

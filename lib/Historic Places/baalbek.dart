@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+
 class Baalbek extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -111,15 +112,19 @@ class Baalbek extends StatelessWidget {
                   ),
                 )
               ),
+
+
               // 4. Map (WebView)
-              Container(
-                width: double.infinity,
-                height: 300.0, // Adjust the map height as needed
-                child: WebView(
-                  initialUrl: 'https://www.google.com/maps?q=Baalbek+Temples,Lebanon', // Replace with the Google Maps URL
-                  javascriptMode: JavascriptMode.unrestricted,
-                ),
-              ),
+              // Container(
+              //   width: double.infinity,
+              //   height: 300.0, // Adjust the map height as needed
+              //   child: WebView(
+              //     initialUrl: 'https://www.google.com/maps?q=Baalbek+Temples,Lebanon', // Replace with the Google Maps URL
+              //     javascriptMode: JavascriptMode.unrestricted,
+              //   ),
+              // ),
+
+
             ],
           ),
         ),

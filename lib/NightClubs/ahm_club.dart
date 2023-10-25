@@ -120,16 +120,20 @@ class AHMclub extends StatelessWidget {
                     ),
                   )
               ),
+
+
               // 4. Map (WebView)
-              Container(
-                width: double.infinity,
-                height: 300.0,
-                child: WebView(
-                  initialUrl:
-                  'https://www.google.com/maps?q=AHM Club+Club,Lebanon',
-                  javascriptMode: JavascriptMode.unrestricted,
-                ),
-              ),
+              // Container(
+              //   width: double.infinity,
+              //   height: 300.0,
+              //   child: WebView(
+              //     initialUrl:
+              //     'https://www.google.com/maps?q=AHM Club+Club,Lebanon',
+              //     javascriptMode: JavascriptMode.unrestricted,
+              //   ),
+              // ),
+
+
             ],
           ),
         ),

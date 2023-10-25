@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tourapp_pages/home.dart';
+import 'package:where_to/home.dart';
 import 'Places/bars.dart';
 import 'Places/beaches.dart';
 import 'Places/historic_places.dart';

@@ -111,15 +111,19 @@ class JeitaGrotto extends StatelessWidget {
                   ),
                 )
               ),
+
+
               // 4. Map (WebView)
-              Container(
-                width: double.infinity,
-                height: 300.0, // Adjust the map height as needed
-                child: WebView(
-                  initialUrl: 'https://www.google.com/maps?q=Jeita+Grotto,Lebanon', // Replace with the Google Maps URL
-                  javascriptMode: JavascriptMode.unrestricted,
-                ),
-              ),
+              // Container(
+              //   width: double.infinity,
+              //   height: 300.0, // Adjust the map height as needed
+              //   child: WebView(
+              //     initialUrl: 'https://www.google.com/maps?q=Jeita+Grotto,Lebanon', // Replace with the Google Maps URL
+              //     javascriptMode: JavascriptMode.unrestricted,
+              //   ),
+              // ),
+
+
             ],
           ),
         ),
