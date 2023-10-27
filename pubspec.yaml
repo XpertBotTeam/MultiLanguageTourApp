@@ -36,6 +36,7 @@ dependencies:
   firebase_auth: ^4.11.1
   cloud_firestore: ^4.11.0
   firebase_storage: ^11.3.1
+  fluttertoast: ^8.2.2
 
 
 
@@ -89,6 +90,7 @@ flutter:
     - assets/Historic.jpg
     - assets/NightClubs.jpg
     - assets/Restaurants.jpeg
+    - assets/Welcome.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

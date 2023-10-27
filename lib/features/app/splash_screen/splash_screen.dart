@@ -25,13 +25,33 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: Text(
-          "Welcome To Flutter Firebase",
-          style: TextStyle(color: Colors.blue, fontWeight: FontWeight.bold
+      body: Container(
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage("assets/Welcome.jpg"), // Replace with the actual path to your image
+            fit: BoxFit.cover, // Cover the entire container
           ),
-          ),
+        ),
+          child: Center(
+            child: Container(
+              color: Colors.purple, // Set the background color for the container
+              padding: EdgeInsets.all(16), // Adjust padding as needed
+              child: Text(
+                "Where To!",
+                style: TextStyle(
+                  color: Colors.yellow,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 56, // Adjust the font size as needed
+                ),
+              ),
+            ),
+          )
+
       ),
     );
   }
 }
+
+
+
+

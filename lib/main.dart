@@ -75,10 +75,10 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(title ?? ''),
-        centerTitle: true,
-      ),
+      // appBar: AppBar(
+      //   title: Text(title ?? ''),
+      //   centerTitle: true,
+      // ),
       body: SplashScreen(
         child: LoginPage(),
       ), // Include the entire login page here
